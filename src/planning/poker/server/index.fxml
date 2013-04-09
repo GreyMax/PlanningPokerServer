@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.GridPane?>
+
+<GridPane alignment="CENTER" hgap="10.0" vgap="0.0"
+          xmlns:fx="http://javafx.com/fxml" fx:controller="planning.poker.server.Controller">
+
+    <TextArea fx:id="itemDescriptionField" GridPane.columnIndex="1" GridPane.rowIndex="0"  GridPane.rowSpan="2"/>
+    <Button fx:id="newItemButton" onAction="#newItem" text="New Item" GridPane.columnIndex="2" GridPane.rowIndex="0" />
+    <Button fx:id="finishItemButton" onAction="#finish" text="Stop" GridPane.columnIndex="2" GridPane.rowIndex="1" />
+</GridPane>

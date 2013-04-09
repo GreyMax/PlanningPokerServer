@@ -1,0 +1,11 @@
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.layout.GridPane?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<GridPane fx:controller="planning.poker.Controller"
+          xmlns:fx="http://javafx.com/fxml" alignment="center" hgap="10" vgap="10">
+    <TextArea fx:id="itemDescriptionField" GridPane.columnIndex="1" GridPane.rowIndex="1"/>
+    <Button fx:id="newItemButton" text="New Item" GridPane.columnIndex="2" GridPane.rowIndex="1" onAction="#newItem"/>
+</GridPane>
